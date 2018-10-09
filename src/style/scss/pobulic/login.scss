@@ -1,0 +1,32 @@
+.l-box {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  margin: 200px auto;
+  width: 388px;
+  .l-box-center {
+  border-bottom: 1px solid #DDE0E8;
+  padding: 24px;
+}
+.l-box-center p {
+  margin-bottom: 10px
+}
+.l-box-button {
+  border-top: 0px solid #FFF;
+  line-height: 28px;
+  overflow: hidden;
+  padding: 20px 24px;
+}
+.l-input {
+  padding: 8px 14px;
+  margin-bottom: 8px;
+  width: 310px;
+}
+.l-btn {
+  margin-left: 100px;
+  padding: 10px 50px;
+}
+.l-f {
+  color: #ABABAB;
+  float: right;
+}
+}

@@ -1,0 +1,29 @@
+.stu_nav_sec_wrap_tpl {
+  background-color: red;
+  height: 54px;
+  // line-height: 54px;
+  padding-top: 13px;
+  font-size: 14px;
+  width: 1190px;
+  margin: 0px auto 0px;
+  box-sizing: border-box;
+  padding-left: 12px;
+  color: yellow;
+  .stu_nav_sec_item {
+    float: left;
+    margin-right: 4px;
+    padding: 3px 6px 3px 3px;
+    border-radius: 3px;
+    // box-sizing: border-box;
+    // height: 54px;
+  }
+  .isText {
+    display: inline-block;
+    cursor: pointer;
+
+    box-shadow: 1px 1px 5px red;
+    &:hover {
+      background-color: green;
+    }
+  }
+}

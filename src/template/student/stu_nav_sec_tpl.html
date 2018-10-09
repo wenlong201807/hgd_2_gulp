@@ -1,0 +1,58 @@
+<ul class="stu_nav_sec_wrap_tpl">
+
+    <!-- <li class="stu_nav_sec_item isText">首页</li>
+  <li class="stu_nav_sec_item ">></li>
+  <li class="stu_nav_sec_item isText">课程</li>
+  <li class="stu_nav_sec_item ">></li> -->
+
+    {{each stu_nav_sec_tpl_list as value i}}
+    <!-- <li {{if isText}} class="stu_nav_sec_item isText" {{else}} class="stu_nav_sec_item" {{/if}}>{{value}}</li> -->
+    <!-- <li class="stu_nav_sec_item">
+        <a href="#">{{value}}</a>
+    </li> -->
+    {{if (i+1)%2}}
+    <li class="stu_nav_sec_item isText">
+
+        <a href="#">{{value}}</a>
+    </li>
+    {{else}}
+    <li class="stu_nav_sec_item">
+
+        <a href="javscript:;" disabled>{{value}}</a>
+    </li>
+    {{/if}} {{/each}}
+</ul>
+
+
+
+
+<!-- {{if admin}}
+	<p>admin</p>
+{{else if code > 0}}
+	<p>master</p>
+{{else}}
+    <p>error!</p>
+{{/if}} -->
+
+
+<!-- <h1>{{title}}</h1>
+<ul>
+    {{each list as value i}}
+        <li>索引 {{i + 1}} ：{{value}}</li>
+    {{/each}}
+</ul> -->
+
+
+<!-- {
+  newsListTpl: childTpl,
+  list1: [
+  {title: '国内标题1', desc: '国内描述1'},
+  {title: '国内标题2', desc: '国内描述2'},
+  {title: '国内标题3', desc: '国内描述3'},
+  ],
+  list2: [
+  {title: '国际标题1', desc: '国际描述1'},
+  {title: '国际标题2', desc: '国际描述2'},
+  {title: '国际标题3', desc: '国际描述3'},
+  ],
+} -->

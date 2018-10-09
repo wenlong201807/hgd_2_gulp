@@ -1,0 +1,76 @@
+<div class="top-l">
+  <a href="#"> 资源管理</a>
+  <span> > </span>
+  <a href="#"> 题型管理</a>
+</div>
+<div class="popup-s">
+  <button id="add">添加题型</button>
+</div>
+<div class="popup-i" id="popup-i">
+  <span>添加题型</span>
+  <div class="up-t">
+    <span>题型名称 ：</span>
+    <input type="text">
+  </div>
+  <div class="up-mt">
+    <span>类型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+    <select>
+      <option>小题</option>
+      <option>大题</option>
+    </select>
+  </div>
+  <form class="up-mb">
+    <span>基础题型：</span>
+    <input id="1" type="checkbox" name="item" value="单选题" />
+    <label for="1">单选题</label>
+    <input id="2" type="checkbox" name="item" value="多选题" />
+    <label for="2">多选题</label>
+    <input id="3" type="checkbox" name="item" value="判断题" />
+    <label for="3">判断题</label>
+    <input id="4" type="checkbox" name="item" value="填空题-小题" />
+    <label for="4">填空题-小题</label>
+    <input id="5" type="checkbox" name="item" value="主观题" />
+    <label for="5">主观题</label>
+  </form>
+  <div class="up-b">
+    <button id="close1">关闭</button>
+    <button id="close2">确认</button>
+  </div>
+  <script type="text/javascript">
+
+    $(window.onload = function () {
+      function $(id) {
+        return document.getElementById(id);
+      }
+      function myDiv() {
+        var mTop = (document.documentElement.clientHeight - 500) / 2;
+        var mleft = (document.documentElement.clientWidth - 400) / 2;
+        $("popup-i").style.top = mTop + "px";
+        $("popup-i").style.left = mleft + "px";
+      }
+      myDiv();
+      $("add").onclick = function () {
+        $("popup-i").style.display = "block";
+        mask.style.display = "block";
+      }
+      $("close1").onclick = function () {
+        $("popup-i").style.display = "none";
+        mask.style.display = "none"
+      }
+      $("close2").onclick = function () {
+        $("popup-i").style.display = "none";
+        mask.style.display = "none"
+      }
+      var mask = document.createElement("div");
+      mask.className = "mask";
+      mask.style.width = document.documentElement.clientWidth;
+      mask.style.height = document.documentElement.clientHeight;
+      document.body.appendChild(mask);
+      window.onresize = function () {
+        myDiv();
+        mask.style.width = document.documentElement.clientWidth;
+        mask.style.height = document.documentElement.clientHeight;
+      }
+    }
+    )
+  </script>

@@ -1,0 +1,108 @@
+<div class="tree">
+  {{each data as item}}
+  <ul>
+    <li>
+      <div class="close_menu">
+        <span></span>
+        <table>
+          <tr>
+            <td>{{item.ID}}</td>
+          </tr>
+        </table>
+      </div>
+      <ul>
+        <li>
+          <div class="close_menu">
+            <span></span>
+            <td>{{item.name}}</td>
+          </div>
+          <ul>
+            <li>
+              <div class="close_menu">
+                <span></span>
+                <table>
+                  <tr>
+                    <td>{{item.type}}</td>
+                    <td class="tree-tj">
+                      <button> 添加</button>
+                    </td>
+                    <td class="tree-xg">
+                      <button>修改</button>
+                    </td>
+                    <td class="tree-sc">
+                      <button>删除</button>
+                    </td>
+                    <td class="tree-sy">
+                      <button>上移</button>
+                    </td>
+                    <td class="tree-xy">
+                      <button>下移</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <ul>
+                <table class="sj">
+                  <tr>
+                    <td>{{item.ID}}</td>
+                    <td class="tree-tj">
+                      <button> 添加</button>
+                    </td>
+                    <td class="tree-xg">
+                      <button>修改</button>
+                    </td>
+                    <td class="tree-sc">
+                      <button>删除</button>
+                    </td>
+                    <td class="tree-sy">
+                      <button>上移</button>
+                    </td>
+                    <td class="tree-xy">
+                      <button>下移</button>
+                    </td>
+                  </tr>
+                </table>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      {{/each}}
+</div>
+<script>
+  // $(document).ready(function () {
+  //   $('.close_menu').each(function () {
+  //     $(this).siblings('ul').hide();
+  //   });
+  //   $(document).on('click', '.close_menu span', function () {
+  //     $(this).parent().addClass('open_menu').removeClass('close_menu');
+  //     $(this).parent().siblings('ul').fadeIn();
+  //     treewidth();
+  //   });
+  //   $(document).on('click', '.open_menu span', function () {
+  //     $(this).parent().parent().find('.open_menu').addClass('close_menu').removeClass('open_menu');
+  //     $(this).parent().parent().find('ul').hide();
+  //     treewidth();
+  //   });
+  //   $(document).on('click', '.tree a', function () {
+  //     $('.ontree').removeClass('ontree');
+  //     $(this).addClass('ontree');
+  //   });
+  //   treewidth();
+  //   function treewidth() {
+  //     var items = new Array();
+  //     var parents = new Array();
+  //     var text_num = 0, parent_num = 0;
+  //     $('.tree a').each(function () {
+  //       if ($(this).is(':hidden') == false) {
+  //         items.push($(this).text().length);
+  //         parents.push($(this).parents('ul').length);
+  //       }
+  //     });
+  //     // document.title="最多字数："+Math.max.apply(null, items)+",最大层数："+Math.max.apply(null, parents);
+  //     text_num = Math.max.apply(null, items);
+  //     parent_num = Math.max.apply(null, parents);
+  //     $('.tree').width(parent_num * 20 + text_num * 14 + 44);
+  //   }
+  // });
+</script>

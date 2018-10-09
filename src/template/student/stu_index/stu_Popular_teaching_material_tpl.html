@@ -1,0 +1,55 @@
+<div class="ptm_container">
+  <div class="ptm_co_title">
+    <div class="le">热门教材</div>
+    <a class="ri">more...</a>
+  </div>
+
+  <ul class="content_img_p_wrap">
+    {{each hot_material_data.material_details as val index}}
+    <li class="content_item">
+      <a href="/view/student/stu_hot_course_details.html?id={{val.material_id}}">
+        <img class="co_item_img" src="{{val.material_img}}" alt="" title="{{val.material_name}}">
+        <span>{{val.course_introduce}}</span>>
+      </a>
+    </li>
+    {{/each}}
+
+
+    <!-- <li class="content_item">
+      <img class="co_item_img" src="/asset/img/teaching.png" alt="" title="我是教材">
+      <span>人教版小学生编程教材jQuery老马前端——谦太详和</span>>
+    </li>
+    <li class="content_item">
+      <img class="co_item_img" src="/asset/img/teaching.png" alt="" title="我是教材">
+      <span>人教版小学生编程教材jQuery老马前端——谦太详和</span>>
+    </li>
+    <li class="content_item">
+      <img class="co_item_img" src="/asset/img/teaching.png" alt="" title="我是教材">
+      <span>人教版小学生编程教材jQuery老马前端——谦太详和</span>>
+    </li>
+    <li class="content_item">
+      <img class="co_item_img" src="/asset/img/teaching.png" alt="" title="我是教材">
+      <span>人教版小学生编程教材jQuery老马前端——谦太详和</span>>
+    </li>
+    <li class="content_item">
+      <img class="co_item_img" src="/asset/img/teaching.png" alt="" title="我是教材">
+      <span>人教版小学生编程教材jQuery老马前端——谦太详和</span>>
+    </li>
+    <li class="content_item">
+      <img class="co_item_img" src="/asset/img/teaching.png" alt="" title="我是教材">
+      <span>人教版小学生编程教材jQuery老马前端——谦太详和</span>>
+    </li>
+    <li class="content_item">
+      <img class="co_item_img" src="/asset/img/teaching.png" alt="" title="我是教材">
+      <span>人教版小学生编程教材jQuery老马前端——谦太详和</span>>
+    </li>
+    <li class="content_item">
+      <img class="co_item_img" src="/asset/img/teaching.png" alt="" title="我是教材">
+      <span>人教版小学生编程教材jQuery老马前端——谦太详和</span>>
+    </li>
+    <li class="content_item">
+      <img class="co_item_img" src="/asset/img/teaching.png" alt="" title="我是教材">
+      <span>人教版小学生编程教材jQuery老马前端——谦太详和</span>>
+    </li> -->
+  </ul>
+</div>

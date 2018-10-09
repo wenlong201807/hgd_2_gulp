@@ -1,0 +1,189 @@
+$hei_fir: 100px;
+
+// .pop-menu {
+// }
+
+header.hea_cla {
+  width: 100%;
+  background-color: #fff;
+  .stu_header_first {
+    width: 1190px;
+    margin: 0px auto;
+    // background-color: #ffff00;
+    height: $hei_fir;
+    .float_left {
+      float: left;
+    }
+    .logo {
+      width: 310px;
+      height: $hei_fir;
+      position: relative;
+      // background-color: red;
+      margin-right: 50px;
+      margin-left: 5px;
+      img {
+        width: 100%;
+        padding-top: 28px;
+      }
+      h1 {
+        position: absolute;
+        left: -9999em;
+        top: -500px;
+      }
+    }
+    .search {
+      width: 475px;
+      height: $hei_fir;
+      // background-color: pink;
+      box-sizing: border-box;
+      padding-top: 36px;
+      position: relative;
+      .search_le {
+        height: 32px;
+        line-height: 32px;
+        box-sizing: border-box;
+        width: 76px;
+        text-align: center;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        i {
+          position: relative;
+          top: -3px;
+        }
+        .abs_choices {
+          position: absolute;
+          z-index: 102;
+          top: 68px;
+          left: 0px;
+          display: none;
+          background-color: #fff;
+          li {
+            height: 32px;
+            line-height: 32px;
+            box-sizing: border-box;
+            width: 75px;
+            text-align: center;
+            cursor: pointer;
+            // background-color: red;
+            &:hover {
+              background-color: #ccc;
+            }
+          }
+        }
+        &:hover .abs_choices {
+          display: block;
+        }
+      }
+      .search_ri {
+        height: 32px;
+        width: 400px;
+        box-sizing: border-box;
+        padding: 5px 35px 5px 10px;
+        margin-left: -1px;
+      }
+      .absolute {
+        position: absolute;
+        top: 40px;
+        right: 6px;
+        cursor: pointer;
+      }
+    }
+    .users {
+      width: 320px;
+      height: $hei_fir;
+      // background-color: green;
+      margin-left: 30px;
+      .users-menu-wrap {
+        position: relative;
+        // background-color: hotpink;
+        cursor: pointer;
+        i {
+          position: relative;
+          top: -2px;
+        }
+        &:hover .users-menu-list {
+          display: block;
+          background-color: #fff;
+        }
+      }
+      & > li {
+        width: 80px;
+        height: 44px;
+        line-height: 44px;
+        box-sizing: border-box;
+        padding-top: 30px;
+        text-align: center;
+        position: relative;
+        // .first {
+        //   background-color: red;
+        // }
+        .first_msg {
+          position: absolute;
+          top: 26px;
+          right: 18px;
+          height: 22px;
+          width: 22px;
+          border-radius: 50%;
+          line-height: 22px;
+          text-align: center;
+          font-size: 14px;
+          color: #fff;
+          background-color: red;
+        }
+        .second {
+          // background-color: blue;
+          width: 80px;
+          .imgSrc {
+            display: block;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            margin-left: 30px;
+          }
+        }
+
+        .users-menu-list {
+          border: 1px solid #ccc;
+          position: absolute;
+          // top: 0;
+          // left: 0;
+          // background-color: red;
+          display: none;
+          z-index: 1000;
+          &:before {
+            content: '';
+            height: 0px;
+            width: 0px;
+            position: absolute;
+            top: -21px;
+            left: 31%;
+            border: 10px solid #ccc;
+            border-color: transparent transparent #ccc transparent;
+            border-style: dashed dashed solid dashed;
+          }
+          &:after {
+            content: '';
+            height: 0px;
+            width: 0px;
+            position: absolute;
+            top: -18px;
+            left: 33%;
+            border: 9px solid #fff;
+            border-color: transparent transparent #fff transparent;
+            border-style: dashed dashed solid dashed;
+          }
+          li {
+            width: 75px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            padding-top: 0px;
+            &:hover {
+              background-color: #ccc;
+            }
+          }
+        }
+      }
+    }
+  }
+}

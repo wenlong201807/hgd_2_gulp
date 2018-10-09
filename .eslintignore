@@ -1,0 +1,10 @@
+/build/
+/config/
+/dist/
+/*.js
+/test/unit/coverage/
+/plugin/
+/src/template/
+/src/js/tmpl/
+/src/js/htmlTpl.js
+/lib/

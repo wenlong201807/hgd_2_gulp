@@ -1,0 +1,33 @@
+$stu_hcd_bg_border: #eaeaea;
+$stu_hcd_bg_box: #fff;
+$stu_hcd_color: #666;
+$stu_hcd_box-shadow: 1px 1px 5px #eaeaea;
+$stu_hcd_lit_blue_bg: #2db0f9;
+$color_title: #1a1a1a;
+$bg_border_stu_mystudy: #e0e0e0;
+@mixin stu_hcd_con_top() {
+  float: left;
+  overflow: hidden;
+  height: 318px;
+}
+@mixin stu_hcd_c3_ra_sh() {
+  border-radius: 5px;
+  box-shadow: $stu_hcd_box-shadow;
+}
+@mixin stu_hcd_det_bot() {
+  float: left;
+  border: 1px solid $stu_hcd_bg_border;
+  background-color: $stu_hcd_bg_box;
+  color: #666;
+  font-size: 14px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: $stu_hcd_box-shadow;
+  overflow: hidden;
+}
+$stu_hcd_h_top_in: 318px;
+//***********************************
+// 开始写学生列表页中，分页器中的样式
+
+//// 结束写学生列表页中，分页器中的样式
+//***********************************

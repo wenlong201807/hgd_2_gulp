@@ -1,0 +1,21 @@
+<ul class="teachings fl">
+  {{each list as val}}
+  <li>
+    <a href="javascript:;" class="fl">
+      <img src="{{val.url}}">
+    </a>
+    <div class="des fl">
+      <h3>{{val.title}}</h3>
+      <h4>{{val.author}}</h4>
+      <h6>{{val.price}}</h6>
+      <p>{{val.introduce}}</p>
+      <div class="people">
+        <i>
+          <img src="{{val.icon}}">
+        </i>
+        <span>{{val.people}}</span>
+      </div>
+    </div>
+  </li>
+  {{/each}}
+</ul>

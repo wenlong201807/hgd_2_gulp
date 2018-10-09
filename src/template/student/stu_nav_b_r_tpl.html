@@ -1,0 +1,33 @@
+<!-- ************************************** -->
+
+<nav class="b_r">
+  <div class="nav_b_r_wrap">
+    <ul class="blue_col">
+      {{each list_b as val }} {{if val.isSep}}
+      <li class="blue_col_item_none">
+        <a href="javascript:;">{{val.content}}</a>
+      </li>
+      {{else}}
+      <li class="blue_col_item">
+        <a href="{{val.hrefUrl}}">{{val.content}}</a>
+      </li>
+      {{/if}} {{/each}}
+    </ul>
+
+
+    <ul class="red_col">
+      {{each list_r as val }} {{if val.isSep}}
+      <li class="red_col_item_none">
+        <a href="javascript:;">{{val.content}}</a>
+      </li>
+      {{else}}
+      <li class="red_col_item">
+        <a href="{{val.hrefUrl}}">{{val.content}}</a>
+      </li>
+      {{/if}} {{/each}}
+    </ul>
+
+
+  </div>
+  <div class="nav_b_r_nowrap_right"></div>
+</nav>

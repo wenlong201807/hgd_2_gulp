@@ -1,0 +1,63 @@
+.top-content{
+  height: 620px;
+  .tl-content{
+    width: 60%;
+    float: left;
+    font-size: 1.3em;
+    text-align: center;
+    white-space: nowrap;
+    input{
+      border: 1px solid #ccc;
+    }
+    .tlc {
+      padding: 30px;
+      height: 30px;
+    }
+    .choice-data{
+       padding: 30px;
+      height: 30px;
+    }
+    .data-name{
+      float: left;
+      padding-left: 420px;
+    }
+    #date{
+      margin-right: 400px;
+    }
+  }
+}
+  .tr-content{
+    width: 40%;
+    height: 600px;;
+    float: right;
+    #r-img{
+      margin-left: 35%;
+    }
+    #r-file{
+      margin-left: 35%;
+      margin-top: 10%;
+      width: 300px;
+    }
+  }
+
+.top-textarea{
+  height: 400px;
+  margin-top: 15px;
+
+}
+.bottom-textarea{
+  padding-top: 15px;
+  height: 400px;
+}
+.wz{
+margin-left:  80px;
+font-size: 1.5em;
+position:relative;
+top :25px;
+
+}
+.aaa{
+  background-color: aquamarine;
+  height: 900;
+  width: 900;
+}

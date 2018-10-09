@@ -1,0 +1,24 @@
+<div class="stu_carousel_container">
+
+  <div class="carousel-content">
+    <ul class="carousel">
+      {{each carouselList as val}}
+      <li>
+        <a href="{{val.hrefUrl}}">
+          <img src="{{val.imgUrl}}" title="{{val.title}}">
+        </a>
+      </li>
+      {{/each}}
+      <!-- <li>
+        <img src="/asset/img/carousel.png">
+      </li>
+      <li>
+        <img src="/asset/img/carousel.png">
+      </li> -->
+
+    </ul>
+    <ul class="img-index"></ul>
+
+  </div>
+
+</div>

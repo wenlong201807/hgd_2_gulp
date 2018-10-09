@@ -1,0 +1,175 @@
+@import '../stu_common_tpl.scss';
+
+.stu_mystudy_tpl {
+  overflow: hidden;
+  width: 1190px;
+  margin: 0px auto;
+  // background-color: yellow;
+  .flo_le {
+    float: left;
+  }
+  /* *******三个按钮导航***开始 */
+  .mystudy_nav {
+    height: 30px;
+    padding: 25px 0px;
+    margin: 0px auto;
+    font-size: 15px;
+    color: $stu_hcd_color;
+    position: relative;
+    // .abs {
+    //   position: absolute;
+    //   top: 10px;
+    //   left: 10px;
+    //   height: 40px;
+    //   width: 40px;
+    //   background-color: $stu_hcd_lit_blue_bg;
+    //   color: #fff;
+    //   opacity: 0.5;
+    // }
+    // background-color: yellow;
+    .nav_ri,
+    .nav_le {
+      border: 1px solid $bg_border_stu_mystudy;
+      padding: 5px 25px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .nav_ri {
+      display: none;
+      border-radius: 5px;
+      float: right;
+      color: $stu_hcd_bg_box;
+      background-color: #1bbc9c;
+    }
+    .nav_le:nth-child(1) {
+      border-radius: 5px 0px 0px 5px;
+    }
+    .nav_le:nth-child(2) {
+      border-radius: 0px 5px 5px 0px;
+      margin-left: -1px;
+    }
+    .active {
+      background-color: $stu_hcd_lit_blue_bg;
+      color: #fff;
+    }
+  }
+  /* *******三个按钮导航***结束 */
+
+  /* *****mystudy_wrap****start */
+  .mystudy_wrap {
+    height: 228px;
+    width: 1190px;
+    overflow: hidden;
+    background-color: $stu_hcd_bg_box;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: $stu_hcd_color;
+    border-radius: 5px;
+    border: 1px solid $bg_border_stu_mystudy;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .mystudy_item {
+    background-color: blue;
+  }
+  /* 左侧 */
+  .item_le {
+    float: left;
+    position: relative;
+    height: 184px;
+    width: 208px;
+    margin-right: 20px;
+    background-color: pink;
+    .item_le_img {
+      height: 100%;
+    }
+    .item_le_ab {
+      height: 25px;
+      line-height: 25px;
+      width: 90px;
+      text-align: center;
+      font-size: 11px;
+      color: #fff;
+      background-color: red;
+      position: absolute;
+      top: -4px;
+      left: -36px;
+      transform: rotate(-45deg);
+    }
+  }
+  /* 右侧 */
+  .item_ri {
+    float: left;
+    background-color: pink;
+    h3 {
+      color: $color_title;
+      height: 30px;
+      font-weight: bold;
+    }
+    .mystudy_info {
+      width: 930px;
+      height: 30px;
+      line-height: 30px;
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      // background-color: red;
+      .info_item {
+        margin-right: 10px;
+        // background-color: yellow;
+      }
+    }
+    hr {
+      height: 0px;
+      border: 0.5px solid $bg_border_stu_mystudy;
+      margin-bottom: 15px;
+    }
+    .mystudy_work {
+      // background-color: yellow;
+      overflow: hidden;
+      .work_item {
+        height: 23px;
+        line-height: 23px;
+        // background-color: red;
+        margin: 7px 0px;
+        .item_list {
+          // display: none;
+          overflow: hidden;
+          width: 920px;
+          background-color: red;
+          margin: 5px 0px;
+          font-size: 14px;
+          .flo_le {
+            float: left;
+          }
+          .flo_ri {
+            float: right;
+            width: 23px;
+            height: 23px;
+            line-height: 23px;
+            cursor: pointer;
+            font-size: 20px;
+            // background-color: yellow;
+          }
+          .tag_color {
+            width: 50px;
+            height: 23px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #fff;
+            text-align: justify;
+            text-align-last: justify;
+            // line-height: 0;
+            margin-right: 15px;
+            padding: 0px 5px;
+            background-color: green;
+          }
+          .tag_section {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

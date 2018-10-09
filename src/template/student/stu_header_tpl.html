@@ -1,0 +1,74 @@
+<!-- 
+
+  这个是头部模块，模板的名字stu_header
+  使用了小图标，引用时需要在页面引用lib图库的
+    lib/font-awesome-4.7.0/css/font-awesome.css 
+ -->
+
+<header class="hea_cla">
+  <div class="stu_header_first">
+    <nav class="float_left logo">
+      <img src="/asset/img/logo.png" alt="稍等" title="哈工大在线教育">
+      <h1>哈工大在线教育</h1>
+    </nav>
+    <div class="float_left search">
+      <div class="float_left search_le">课程 &nbsp;
+        <i class="fa fa-sort-desc "></i>
+        <ul class="abs_choices">
+          <li>课程</li>
+          <li>教材</li>
+        </ul>
+      </div>
+
+      <input class="float_left search_ri" type="text">
+      <i class="fa fa-search fa-2x absolute" aria-hidden="true"></i>
+    </div>
+
+    {{each stu_info as val i}}
+    <ul class="float_left users">
+      <li class="float_left ">
+        <div class="first">
+          <i class="fa fa-commenting-o fa-3x" aria-hidden="true"></i>
+
+        </div>
+        <div class="first_msg">1</div>
+        <div class="first_msg">{{val.msgNum}}</div>
+      </li>
+      <li class="float_left ">
+
+        <div class="second">
+          <img class="imgSrc" src="/asset/img/portrait.png" alt="portrait" title="我是张三丰">
+          <img class="imgSrc" src="{{val.imgUrl}}" alt="portrait" title="我是张三丰">
+        </div>
+
+      </li>
+      <li class="float_left">
+        <div class="users-menu-wrap">
+          <span>张三丰</span> &nbsp;
+          <span>{{val.name}}</span> &nbsp;
+          <i class="fa fa-sort-desc "></i>
+
+          <ul class="users-menu-list">
+            <li>我的资源</li>
+            <li>我的订单</li>
+            <li>个人资料</li>
+            <li>退出登录</li>
+          </ul>
+        </div>
+      </li>
+      <li class="float_left ">
+        <div class="users-menu-wrap">
+          <span>学生端</span> &nbsp;
+          <i class="fa fa-sort-desc "></i>
+
+          <ul class="users-menu-list">
+            <li>学生端</li>
+            <li>教师端</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    {{/each}}
+
+  </div>
+</header>

@@ -1,0 +1,98 @@
+<div class="r-lf">
+  <ul class="item">
+    <li class="li on">
+      <div class="i-top">资源管理</div>
+      <div class="content">
+        <div class="text">
+          <a href="../../view/redactor/index.html">课题管理</a>
+        </div>
+        <div class="text">
+          <a href="../../view/redactor/knowledge.html">知识体系管理</a>
+        </div>
+        <div class="text">
+          <a href="../../view/redactor/02.html">教材管理</a>
+        </div>
+        <div class="text">
+          <a href="../../view/redactor/03.html">课件管理</a>
+        </div>
+        <div class="text">
+          <a href="../../view/radcator/04.html">习题管理</a>
+        </div>
+      </div>
+    </li>
+    <li class="li on">
+      <div class="i-top">课程包管理</div>
+      <div class="content">
+        <div class="text">
+          <a href="#">课程包分类管理</a>
+        </div>
+        <div class="text">
+          <a href="#">课程包内容管理</a>
+        </div>
+      </div>
+    </li>
+    <li class="li on">
+      <div class="i-top">销售管理</div>
+      <div class="content">
+        <div class="text">
+          <a href="#">课程包销量管理</a>
+        </div>
+        <div class="text">
+          <a href="#">订单管理</a>
+        </div>
+      </div>
+    </li>
+    <li class="li on">
+      <div class="i-top">序列号管理</div>
+      <div class="content">
+        <div class="text">
+          <a href="#">课程包序列号生成及批次查询</a>
+        </div>
+        <div class="text">
+          <a href="#">序列号查询</a>
+        </div>
+      </div>
+    </li>
+    <li class="li on">
+      <div class="i-top">辅助内容管理</div>
+      <div class="content">
+        <div class="text">
+          <a href="#">首页推荐管理</a>
+        </div>
+      </div>
+    </li>
+    <li class="li on">
+      <div class="i-top">统计管理</div>
+      <div class="content">
+        <div class="text">
+          <a href="#">课程统计</a>
+        </div>
+        <div class="text">
+          <a href="#">课程包序列号激活统计</a>
+        </div>
+      </div>
+    </li>
+    <li class="li on">
+      <div class="i-top">用户管理</div>
+      <div class="content">
+        <div class="text">
+          <a href="#">个人用户管理</a>
+        </div>
+        <div class="text">
+          <a href="#">教师认证管理</a>
+        </div>
+        <div class="text">
+          <a href="#">管理员管理</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<script>
+  $(function () {
+    $(".text").hide();
+    $(".item>li").on("click", function (e) {
+      $(this).find(".text").slideToggle().parents(".li on").siblings().find(".text").slideUp();
+    });
+  })
+</script>

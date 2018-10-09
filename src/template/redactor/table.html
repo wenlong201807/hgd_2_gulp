@@ -1,0 +1,51 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>{{title1}}</th>
+      <th>{{title2}}</th>
+      <th>{{title3}}</th>
+      <th>{{title4}}</th>
+      <th>{{title5}}</th>
+      <th>{{title6}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{each data as item}}
+    <tr>
+      <td>{{item.ID}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.type}}</td>
+      <td>{{item.base}}</td>
+      <td>{{item.choice}}</td>
+      <td>
+        <a class="bj" href="#">编辑</a>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <a class="sc" href="#">删除</a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+<script>
+  $($(document).on('click', '.sc', function () {
+    $(this).parent().parent().remove();
+  })
+  );
+  $(function () {
+    $(".bj").click(function () {
+      str = $(this).text() == "编辑" ? "确认" : "编辑";
+      $(this).text(str);
+      $(this).parent().siblings("td:lt(5)").each(function () {
+        obj_text = $(this).find("input:text");
+        if (!obj_text.length) {
+
+          $(this).html("<input type='text' class='r-bjk' value='" + $(this).text() + "'>");
+        }
+        else {
+
+          $(this).html(obj_text.val());
+        }
+      });
+    });
+  });
+</script>

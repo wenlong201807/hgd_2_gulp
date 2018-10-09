@@ -1,0 +1,10 @@
+<ul class="books">
+  {{ each arr as obj index}}
+  <li>
+    <a href="#">
+      <img src="{{obj.url}}" alt="">
+    </a>
+    <p> {{obj.text}}</p>
+  </li>
+  {{/each}}
+</ul>

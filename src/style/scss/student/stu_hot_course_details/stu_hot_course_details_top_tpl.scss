@@ -1,0 +1,205 @@
+// $stu_hcd_bg_border: #eaeaea;
+// $stu_hcd_bg_box: #fff;
+// $stu_hcd_color: #666;
+// $stu_hcd_box-shadow: 1px 1px 5px #eaeaea;
+// $stu_hcd_lit_blue_bg: #2db0f9;
+// $color_title: #1a1a1a;
+// @mixin stu_hcd_con_top() {
+//   float: left;
+//   overflow: hidden;
+//   height: 318px;
+// }
+// @mixin stu_hcd_c3_ra_sh() {
+//   border-radius: 5px;
+//   box-shadow: $stu_hcd_box-shadow;
+// }
+// @mixin stu_hcd_det_bot() {
+//   float: left;
+//   border: 1px solid $stu_hcd_bg_border;
+//   background-color: $stu_hcd_bg_box;
+//   color: #666;
+//   font-size: 14px;
+//   border-radius: 5px;
+//   box-sizing: border-box;
+//   box-shadow: $stu_hcd_box-shadow;
+//   overflow: hidden;
+// }
+// $stu_hcd_h_top_in: 318px;
+@import '../stu_common_tpl.scss';
+.stu_hot_course_details_top {
+  height: 380px;
+  width: 1190px;
+  margin: 0px auto 10px;
+  padding: 30px;
+  @include stu_hcd_c3_ra_sh();
+
+  border: 1px solid $stu_hcd_bg_border;
+  box-sizing: border-box;
+  background-color: $stu_hcd_bg_box;
+  .stu_de_le {
+    @include stu_hcd_con_top();
+    width: 366px;
+    margin-right: 30px;
+    border: 1px solid $stu_hcd_bg_border;
+    overflow: hidden;
+    img {
+      display: block;
+      // height: 100%;
+      width: 100%;
+    }
+  }
+  .stu_de_ri {
+    @include stu_hcd_con_top();
+    width: 730px;
+    background-color: $stu_hcd_bg_box;
+    h2 {
+      height: 56px;
+      line-height: 56px;
+      font-size: 20px;
+      color: $color_title;
+    }
+
+    .course_vis {
+      color: $stu_hcd_color;
+    }
+    .course_num {
+      color: #e7594d;
+      letter-spacing: 1px;
+    }
+    .sep_line {
+      height: 2px;
+      margin: 21px 0px 5px;
+
+      background-color: $stu_hcd_bg_border;
+    }
+    .ta_cla {
+      border: 1px solid $stu_hcd_bg_box;
+      .tb_cla {
+        border: 1px solid $stu_hcd_bg_box;
+        tr {
+          border: 1px solid $stu_hcd_bg_box;
+          td {
+            text-align: left;
+            height: 35px;
+            line-height: 35px;
+            color: $stu_hcd_color;
+            width: 70px;
+          }
+        }
+      }
+    }
+
+    .join_course {
+      display: inline-block;
+      padding: 11px 65px 13px;
+      background-color: $stu_hcd_lit_blue_bg;
+      font-size: 20px;
+      color: $stu_hcd_bg_box;
+      @include stu_hcd_c3_ra_sh();
+      margin-top: 90px;
+      cursor: pointer;
+    }
+  }
+}
+.stu_hot_course_details_bottom_wrap {
+  overflow: hidden;
+  width: 1190px;
+  // background-color: yellow;
+  margin: 0px auto 0px;
+
+  .stu_hot_course_details_bottom_le {
+    @include stu_hcd_det_bot();
+    //   float: left;
+    // border: 1px solid $stu_hcd_bg_border;
+    // background-color: $stu_hcd_bg_box;
+    // color: #666;
+    // font-size: 14px;
+    // border-radius: 5px;
+    // box-sizing: border-box;
+    // box-shadow: $stu_hcd_box-shadow;
+
+    height: 960px;
+    width: 940px;
+    margin-right: 10px;
+    padding: 30px;
+    .title_intro {
+      font-size: 18px;
+      color: $color_title;
+      // height: 18px;
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 16px;
+        width: 6px;
+        margin-right: 12px;
+        background-color: $stu_hcd_lit_blue_bg;
+      }
+    }
+    .content_wrap {
+      margin-top: 30px;
+      // background: red;
+
+      .content_item {
+        font-size: 14px;
+        color: $stu_hcd_color;
+      }
+      .te_ind_2 {
+        text-indent: 2em;
+      }
+    }
+    .sep_line {
+      height: 2px;
+      background-color: $stu_hcd_bg_border;
+      margin: 30px 0px;
+    }
+  }
+  .stu_hot_course_details_bottom_ri_t {
+    margin-bottom: 10px;
+    @include stu_hcd_det_bot();
+    height: 342px;
+  }
+  .stu_hot_course_details_bottom_ri_b {
+    @include stu_hcd_det_bot();
+    height: 604px;
+  }
+  .con_det_bot_ri {
+    width: 240px;
+    .title {
+      width: 100%;
+      display: inline-block;
+      line-height: 48px;
+      height: 48px;
+      font-size: 16px;
+      background-color: #f8f8f8;
+      box-sizing: border-box;
+      padding: 0px 15px 0px 22px;
+      border-bottom: 1px solid $stu_hcd_bg_border;
+      .title_right {
+        float: right;
+        font-size: 14px;
+        color: $stu_hcd_lit_blue_bg;
+      }
+    }
+    .img_p_wrap {
+      // list-style: none;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px 16px;
+      img {
+        width: 100%;
+        height: 182px;
+        margin-bottom: 10px;
+      }
+      p {
+        height: 64px;
+        // background: red;
+        font-size: 14px;
+      }
+    }
+  }
+  .stu_hot_course_details_bottom_wrap_clear_fix {
+    clear: both;
+    height: 63px;
+    // background-color: red;
+  }
+}

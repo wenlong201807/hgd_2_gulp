@@ -1,0 +1,131 @@
+.wrap {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.header {
+  height: 98px;
+}
+
+.nav {
+  height: 60px;
+  line-height: 60px;
+  background: #3598db
+}
+
+.nav a {
+  color: #fff;
+  font-family: '微软雅黑';
+}
+
+.nav li {
+  float: left;
+  margin-right: 10px;
+}
+
+.nav-left a {
+  padding: 8px 20px;
+  font-size: 16px;
+}
+
+.nav-left .line {
+  position: relative;
+  top: 20px;
+  width: 2px;
+  height: 22px;
+  background: #fff;
+  margin: 0 20px;
+}
+
+.nav-left .active {
+  background: #2db0f9;
+}
+
+.nav-right {
+  position: absolute;
+  right: 0;
+  float: right;
+  background: #e7594d;
+  padding-left: 20px;
+  padding-right: 180px;
+}
+
+.nav-right li {
+  margin-left: 20px;
+}
+
+.nav-right .line {
+  width: 2px;
+  background: #fff;
+  height: 22px;
+  position: relative;
+  top: 20px;
+}
+
+.nav-right a {
+  font-size: 14px;
+}
+
+.banner {
+  position: relative;
+  background: #61caff;
+  height: 406px;
+}
+
+.banner img {
+  // position: absolute;
+  width: 1190px;
+  height: 406px;
+}
+
+.banner li {
+  float: left;
+}
+
+.banner .banner-btn {
+  text-align: center;
+}
+
+.banner .banner-btn li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
+}
+
+.book-title {
+  position: relative;
+  margin: 40px 0 30px 24px;
+  font: bold 22px/1 "微软雅黑";
+}
+
+.book-title::before {
+  position: absolute;
+  left: -24px;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 22px;
+  background: #2db0f9;
+}
+
+.books li {
+  float: left;
+  width: 208px;
+  margin: 0 20px 0 10px;
+}
+
+.books li img {
+  width: 210px;
+}
+
+.books li p {
+  margin: 7px 0 35px 0;
+  font: 14px/24px "微软雅黑";
+}

@@ -1,0 +1,56 @@
+.t-Coursemanage-title {
+  position: relative;
+  height: 86px;
+  a {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+  }
+  .manage-left {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    .active {
+      background: #2db0f9;
+      color: #fff;
+    }
+  }
+  .manage-right {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #1bbc9c;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.t-courseManage {
+  margin-top: 10px;
+  li {
+    height: 210px;
+    padding: 20px 0 20px 20px;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+    .manage-fr {
+      width: 865px;
+      height: 80px;
+      margin-left: 25px;
+      border-bottom: 1px solid #ccc;
+      .course-title {
+        font-size: 18px;
+        margin-bottom: 22px;
+      }
+      span {
+        font-size: 14px;
+        margin-right: 100px;
+        i {
+          padding-right: 3px;
+        }
+      }
+    }
+  }
+}

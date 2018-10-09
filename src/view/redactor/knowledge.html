@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../style/main.css">
+  <link rel="stylesheet" href="../../lib/wangEditor-1.1.0-min.css">
+</head>
+
+<body>
+  <div class="stu_header_cla"></div>
+  <!-- 头部 -->
+  <div class="r-center">
+    <div class="r-nav"></div>
+    <!-- 左侧导航 -->
+    <div class="r-content">
+      <div class="top"></div>
+      <div class="search">
+        <input type="text" id="s-content">
+        <button class="s-btn"> 搜索</button>
+        <form class="form">
+          <span>发布状态：</span>
+          <input id="all" type="radio" name="item" value="全部" />
+          <label for="all">全部</label>
+          <input id="simple" type="radio" name="item" value="小题" />
+          <label for="simple">开启</label>
+          <input id="hard" type="radio" name="item" value="大题" />
+          <label for="hard">关闭 </label>
+        </form>
+      </div>
+      <div class="r-c"></div>
+      <div id="pagination"></div>
+    </div>
+  </div>
+  <!-- 右侧内容 -->
+  <div class="footer"></div>
+  <!-- 底部内容 -->
+  <script src="../../lib/require.js" data-main="../../js/redactor/knowledge.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+@mixin container_w_h {
+  width: 1190px;
+  height: 410px;
+}
+.stu_carousel_container {
+  width: 100%;
+  height: 410px;
+  background-color: #61caff;
+  .carousel-content {
+    @include container_w_h;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 10px; */
+    .carousel {
+      height: 410px;
+      position: absolute;
+      & > li {
+        float: left;
+        @include container_w_h;
+        img {
+          @include container_w_h;
+        }
+      }
+    }
+    .img-index {
+      position: absolute;
+      bottom: 20px;
+      left: calc(50% - 200px);
+      height: 30px;
+      width: 400px;
+      // background-color: red;
+      display: flex; // 弹性盒子的左右要求都设置在父盒子上，子盒子不能有浮动
+      flex-flow: row wrap;
+      // align-content: flex-start; //垂直方向
+      justify-content: center; //水平方向
+
+      li {
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #fff;
+        font-size: 12px;
+        cursor: pointer;
+        margin: 0 3px;
+        color: #fff;
+        &:hover {
+          background-color: #3598db;
+        }
+      }
+      .js_index {
+        background-color: #3598db;
+      }
+    }
+  }
+}

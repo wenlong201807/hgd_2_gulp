@@ -1,0 +1,26 @@
+<div class="stu_hot_course_lists_tpl">
+  <ul class="stu_hcl_le">
+    <!-- <li class="title_nav">jingran meiyou </li> -->
+    <!-- **************** -->
+    <!-- <li class="title_nav">jingran meiyou </li> -->
+    <!-- **************** -->
+    <!-- ***************** -->
+    {{each hot_course_lists as val}}
+    <li class="title_nav">
+      <h3>
+        <span cid="{{val.id}}" class="title_nav_hid">+</span> {{val.title}}
+      </h3>
+      <ul class="content_hid">
+        <li class="content_hi active">{{val.content1}}</li>
+        <li class="content_hi">{{val.content2}}</li>
+        <li class="content_hi">{{val.content3}}</li>
+      </ul>
+    </li>
+    {{/each}}
+
+    <!-- ****************** -->
+    <!-- *************** -->
+    <!-- <li class="title_nav">jingran meiyou </li> -->
+    <!-- *************** -->
+  </ul>
+</div>

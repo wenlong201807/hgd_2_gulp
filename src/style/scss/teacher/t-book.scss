@@ -1,0 +1,81 @@
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.teachinglist {
+  .teachinglist-title {
+    height: 54px;
+  }
+}
+
+.sidebar {
+  li {
+    width: 240px;
+    height: 40px;
+    border: 1px solid #ccc;
+    text-indent: 36px;
+    font: 14px/40px '微软雅黑';
+    margin-bottom: 10px;
+  }
+}
+
+.teaching-content {
+  width: 930px;
+  height: 56px;
+  font: 14px/56px '微软雅黑';
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  text-indent: 32px;
+  .teaching-coutent-btn {
+    margin-right: 30px;
+  }
+  i {
+    color: #4ba0de;
+    letter-spacing: 2px;
+  }
+}
+
+.teachings {
+  width: 930px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  li {
+    height: 180px;
+    padding: 30px;
+    border-bottom: 1px solid #ccc;
+    img {
+      height: 180px;
+    }
+    .des {
+      width: 640px;
+      margin-left: 20px;
+      h3 {
+        font: 18px/1 '微软雅黑';
+        margin-bottom: 15px;
+      }
+      h4 {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+      h6 {
+        font-size: 14px;
+        color: #e7594d;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+      .people {
+        height: 16px;
+        img {
+          height: 16px;
+        }
+      }
+    }
+  }
+}
